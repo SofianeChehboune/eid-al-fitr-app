@@ -11,7 +11,7 @@ Cette application Streamlit célèbre l'Aïd al-Fitr avec une interface interact
 ## 🚀 Déploiement  
 Cette application est déployée sur **Streamlit Cloud**.  
 
-➜ [Accéder à l'application](https://share.streamlit.io/SofianeChehboune/eid-al-fitr-app)  
+➜ [Accéder à l'application](https://eid-al-fitr-app-nr6homjgwu8m82kv4dmaph.streamlit.app/)  
 
 ## 🔧 Installation locale  
 1. **Cloner le projet** :  

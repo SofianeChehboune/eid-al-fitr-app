@@ -86,6 +86,54 @@ for i, (emoji, text) in enumerate(steps):
     st.success(f"✅ {emoji} {text}")
     progress_bar.progress((i + 1) / len(steps))
 
+# 📱 Simulation d'un téléphone avec écran défilant
+phone_css = """
+<style>
+    .phone-frame {
+        width: 300px;
+        height: 550px;
+        border: 16px solid black;
+        border-radius: 40px;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        background: white;
+        margin: auto;
+    }
+    .phone-screen {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 10px;
+    }
+    .top-bar {
+        width: 100%;
+        height: 30px;
+        background: black;
+        border-radius: 25px 25px 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+"""
+
+phone_content = """
+<div class='phone-screen'>
+    <h3>📱 Eid al-Fitr 2025</h3>
+    <p>Bienvenue dans cette application spéciale Aïd !</p>
+    <ul>
+        <li>🌙 Informations sur l'Aïd</li>
+        <li>🎁 Idées de cadeaux</li>
+        <li>🍽️ Recettes traditionnelles</li>
+    </ul>
+    <p>Défilez pour en voir plus...</p>
+</div>
+"""
+
+st.markdown(phone_css, unsafe_allow_html=True)
+st.markdown("<div class='phone-frame'><div class='top-bar'></div>" + phone_content + "</div>", unsafe_allow_html=True)
+
 # 💌 Message spécial
 with stylable_container(
     key="special_message",

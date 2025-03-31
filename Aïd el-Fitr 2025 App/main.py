@@ -109,11 +109,11 @@ with stylable_container(
     """
 ):
     import streamlit as st
-
-    st.markdown("### 🎵 Festive atmosphere! | 🎵 أجواء احتفالية!")
     st.markdown("""
     <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/6pyZCep-2qU?autoplay=1&mute=1" 
+    src="https://www.youtube.com/embed/G-njYClSVgE?autoplay=1&mute=0" 
     frameborder="0" allowfullscreen></iframe>
 """, unsafe_allow_html=True)
+
+
 

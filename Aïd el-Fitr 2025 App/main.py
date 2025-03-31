@@ -21,7 +21,7 @@ def set_background(image_path):
                 background-size: cover;
             }}
             .text-box {{
-                background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+                background-color: rgba(0, 0, 0, 0.5); 
                 padding: 10px;
                 border-radius: 10px;
                 display: inline-block;
@@ -30,7 +30,14 @@ def set_background(image_path):
                 color: gold !important;
                 text-shadow: 2px 2px 5px black;
                 font-weight: bold;
+                text-align: center;
             }}
+            iframe {
+                width: 100%;
+                max-width: 560px;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
             </style>
         """, unsafe_allow_html=True)
     else:
@@ -49,7 +56,7 @@ except:
 
 # Titre
 st.markdown("""
-    <h1 class="text-box" style="text-align: center; font-size: 50px;">
+    <h1 class="text-box" style="font-size: 40px;">
         🌙✨ Eid al-Fitr 2025 ✨🌙 | 🎉 عيد الفطر 2025 🎉
     </h1>
 """, unsafe_allow_html=True)
@@ -108,14 +115,9 @@ with stylable_container(
         text-align: center;
     """
 ):
-    import streamlit as st
-    
     st.markdown("""
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/G-njYClSVgE?autoplay=1" 
-    frameborder="0" allow="autoplay" allowfullscreen></iframe>
-""", unsafe_allow_html=True)
-
-
-
-
+    <iframe 
+        src="https://www.youtube.com/embed/G-njYClSVgE?autoplay=1&mute=0" 
+        frameborder="0" allow="autoplay" allowfullscreen>
+    </iframe>
+    """, unsafe_allow_html=True)
